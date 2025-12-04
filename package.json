@@ -1,6 +1,6 @@
 {
   "name": "tsds-unlink",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Uninstall a package from node_modules symlink. See tsds-link to add the link.",
   "keywords": [
     "dev",
