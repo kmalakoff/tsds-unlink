@@ -56,13 +56,13 @@ function addTests(repo) {
         // First link
         link([], { cwd: dest }, (err?: Error): undefined => {
           if (err) {
-            done(err.message);
+            done(err);
             return;
           }
           // Then unlink
           unlink([], { cwd: dest }, (err?: Error): undefined => {
             if (err) {
-              done(err.message);
+              done(err);
               return;
             }
             done();
