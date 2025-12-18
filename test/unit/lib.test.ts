@@ -32,7 +32,7 @@ function addTests(repo) {
     const deps = { ...(modulePackage.dependencies || {}), ...(modulePackage.peerDependencies || {}) };
 
     before((cb) => {
-      installGitRepo(repo, dest, (err?: Error): undefined => {
+      installGitRepo(repo, dest, (err?: Error): void => {
         if (err) {
           cb(err);
           return;
@@ -54,13 +54,13 @@ function addTests(repo) {
     describe('happy path', () => {
       it('link then unlink', (done) => {
         // First link
-        link([], { cwd: dest }, (err?: Error): undefined => {
+        link([], { cwd: dest }, (err?: Error): void => {
           if (err) {
             done(err.message);
             return;
           }
           // Then unlink
-          unlink([], { cwd: dest }, (err?: Error): undefined => {
+          unlink([], { cwd: dest }, (err?: Error): void => {
             if (err) {
               done(err.message);
               return;
