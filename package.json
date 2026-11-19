@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "link-unlink": "*",
-    "tsds-lib": "*"
+    "tsds-lib": "^1.24.0"
   },
   "devDependencies": {
     "@types/mocha": "*",
@@ -51,7 +51,6 @@
     "node-version-use": "*",
     "queue-cb": "*",
     "resolve": "*",
-    "short-hash": "*",
     "ts-dev-stack": "*",
     "ts-swc-loaders": "*",
     "tsds-config": "*",
